@@ -1,36 +1,150 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>
-            LibertyUI
-        </title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-        <link href="main.css" rel="stylesheet">
-    </head>
 
-    <body>
-        <header>
-            <div class="">
-                <a href="#">
-                    <img src="assets/logo.png" alt="logo image">
-                </a>
-                <div class="nav-menu-main">
-                    <nav>
-                        <ul class="nav-menu_list">
-                            <li class="nav-menu-item"><a href="#">DASHBOARD</a></li>
-                            <li class="nav-menu-item"><a href="#">WIDGETS</a></li>
-                            <li class="nav-menu-item"><a href="#">UI ELEMENTS</a></li>
-                            <li class="nav-menu-item"><a href="#">PAGES</a></li>
-                            <li class="nav-menu-item"><a href="#">FORMS</a></li>
-                            <li class="nav-menu-item"><a href="#">APPS</a></li>
-                        </ul>
-                    </nav>
+<head>
+    <meta charset="utf-8">
+    <title>
+        LibertyUI
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.8.95/css/materialdesignicons.min.css"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link href="header.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav container">
+            <div class="nav-top container">
+                <div class="nav-brand-logo">
+                    <a href="#"><img src="assets/logo.png" alt="logo image"></a>
+                </div>
+                <div class="nav-top-right">
+                    <div class="notification">
+                        <span class="mdi mdi-bell-outline"></span>
+                        <span class="badge">4</span>
+                    </div>
+                    <div class="dropdown">
+                        <img class="face circle-image" src="assets/images/face1.jpg" alt="account profile image">
+                    </div>
                 </div>
             </div>
-        </header>
-        <main>
-        </main>
-    </body>
+            <div class="nav-menu-container">
+                <nav class="container nav-menu-main">
+                    <ul class="nav-menu-list">
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <span class="mdi mdi-television color-blue icon-sm"></span>
+                                <span class="nav-menu-item-title">DASHBOARD</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <span class="mdi mdi-apple-safari color-blue"></span>
+                                <span class="nav-menu-item-title">WIDGETS</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <span class="mdi mdi-atom color-blue"></span>
+                                <span class="nav-menu-item-title dropdown">UI ELEMENTS</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <span class="mdi mdi-flag-outline color-blue"></span>
+                                <span class="nav-menu-item-title dropdown">PAGES</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <span class="mdi mdi-android-studio color-blue"></span>
+                                <span class="nav-menu-item-title dropdown">FORMS</span>
+                            </a>
+                        </li>
+                        <li class="nav-menu-item">
+                            <a href="#">
+                                <span class="mdi mdi-asterisk color-blue"></span>
+                                <span class="nav-menu-item-title dropdown">APPS</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main-wrapper">
+        <section class="row row1">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-icon">
+                        <span class="mdi mdi-account-multiple-outline color-blue icon-lg"></span>
+                    </div>
+                    <div class="card-text">
+                        <p>New Users</p>
+                        <p class="card-count">65,650</p>
+                    </div>
+                </div>
+                <div class="card card-container">
+                    <div class="card-icon">
+                        <span class="mdi mdi-checkbox-marked-circle-outline color-blue icon-lg"></span>
+                    </div>
+                    <div class="card-text">
+                        <p>New Feedbacks</p>
+                        <p class="card-count">32,604</p>
+                    </div>
+                </div>
+                <div class="card card-container">
+                    <div class="card-icon">
+                        <span class="mdi mdi-trophy-outline color-blue icon-lg"></span>
+                    </div>
+                    <div class="card-text">
+                        <p>Employees</p>
+                        <p class="card-count">17,583</p>
+                    </div>
+                </div>
+                <div class="card card-container">
+                    <div class="card-icon">
+                        <span class="mdi mdi-target color-blue icon-lg"></span>
+                    </div>
+                    <div class="card-text">
+                        <p>Total Sales</p>
+                        <p class="card-count">61,119</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row row2">
+            <div class="card-container">
+                <div class="card card-profile">
+                    <div class="profile-image">
+                        <img class="circle-image" src="assets/images/profile.jpg" alt="profile-image">
+                    </div>
+                    <h4 class="center">Maria Jahnson</h4>
+                    <p class="text-muted center">Developer</p>
+                    <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                        eget dolor. Lorem</p>
+                    <button class="btn-primary">Follow</button>
+                    <div class="border-top card-container">
+                        <div class="follow-card-item">
+                            <h5 class="center">5896</h6>
+                            <p class="center">Post</p>
+                        </div>
+                        <div class="follow-card-item">
+                            <h5 class="center">1596</h6>
+                            <p class="center">Followers</p>
+                        </div>
+                        <div class="follow-card-item">
+                            <h5 class="center">7896</h6>
+                            <p class="center">Likes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>

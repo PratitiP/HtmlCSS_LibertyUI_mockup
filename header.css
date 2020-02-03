@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #223C61;
+    margin: 0;
+    background-color: #eff3f5;
+
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-brand-logo {
+    height: 28px;
+    max-width: 100%;
+}
+
+.nav-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.notification{
+    position: relative;
+    padding: 5px 5px;
+}
+
+.notification .mdi-bell-outline{
+    font-size: inherit;
+
+}
+
+.notification .badge {
+    position: absolute;
+    background-color: #FF0017;
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    /* Position the badge within the relatively positioned button */
+    top: 0;
+    right: 0;
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+}
+
+.face {
+    width: 37px;
+    height: 37px;
+}
+
+.circle-image{
+    border-radius: 50%;
+}
+
+.nav-menu-container{
+    width: 100%;
+}
+.nav-menu-list {
+    list-style-type: none;
+}
+
+.nav-menu-item a {
+    text-decoration: none;
+}
+
+.icon-sm{
+    font-size: 0.8rem;
+}
+
+.nav-menu-item-title {
+    color: #223C61;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.mdi.color-blue {
+    color: #464de3;
+}
+
+.dropdown::after {
+    content: '\F140';
+    font: normal normal normal 0.8rem "Material Design Icons";
+}
+
+.nav-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
