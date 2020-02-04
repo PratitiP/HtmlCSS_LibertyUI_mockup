@@ -12,31 +12,40 @@ body {
 
 }
 
-.container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 12.5px;
-    padding-right: 12.5px;
+header{
+    background: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav {
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .nav-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .nav-brand-logo {
+    width: 40%;
     height: 28px;
     max-width: 100%;
 }
@@ -44,43 +53,38 @@ body {
 .nav-top-right {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width:30%;
+    justify-content: flex-end;
+    padding-right: 12.5px;
 }
 
 .search {
     display: flex;
     align-items: center;
     border-radius: 50px;
-    background: rgba(213, 220, 236, 0.15);
+    background: #eff3f5;
     border: none;
     padding:0.6rem;
 
 }
-
-.search_field {
-    font-size:0.75rem;
-    margin-left: 10px;
-    margin-right: 10px;
-    background: rgba(213, 220, 236, 0.15);
-    box-shadow: none;
-    border: none;
-    outline: none;
-    outline-width: 0;
-    outline-color: transparent;
-    box-shadow: none;
-    outline-style: none;
-}
-
 .iconsearch {
     color: grey;
     margin-left: 10px;
     margin-right: 10px;
 }
+.search_field {
+    font-size:0.75rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: transparent;
+    border: none;
+    outline: none;   
+}
+
 
 .notification {
+    margin: 12px;
     position: relative;
-    padding: 5px 5px;
+    padding: 7px 7px;
 }
 
 .notification .mdi-bell-outline {
@@ -101,6 +105,17 @@ body {
     width: 1rem;
     height: 1rem;
     text-align: center;
+}
+
+.account-details-dropdown{
+    position: relative;
+}
+
+.account-details-dropdown::after{
+    content: '\F140';
+    position: absolute;
+    top:12px;
+    font: normal normal normal 0.8rem "Material Design Icons";
 }
 
 .face {

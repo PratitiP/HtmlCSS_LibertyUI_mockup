@@ -12,11 +12,12 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <link href="header.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
+    <link href="table.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="nav container">
+        <div class="nav">
             <div class="nav-top container">
                 <div class="nav-brand-logo">
                     <a href="#"><img src="assets/logo.png" alt="logo image"></a>
@@ -30,7 +31,7 @@
                         <span class="mdi mdi-bell-outline"></span>
                         <span class="badge">4</span>
                     </div>
-                    <div class="dropdown">
+                    <div class="account-details-dropdown">
                         <img class="face circle-image" src="assets/images/face1.jpg" alt="account profile image">
                     </div>
                 </div>
@@ -134,21 +135,151 @@
                     <div class="border-top card-container">
                         <div class="follow-card-item">
                             <h5 class="center">5896</h6>
-                            <p class="center">Post</p>
+                                <p class="center">Post</p>
                         </div>
                         <div class="follow-card-item">
                             <h5 class="center">1596</h6>
-                            <p class="center">Followers</p>
+                                <p class="center">Followers</p>
                         </div>
                         <div class="follow-card-item">
                             <h5 class="center">7896</h6>
-                            <p class="center">Likes</p>
+                                <p class="center">Likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card graph-card">
+                    <div class="graph-header">
+                        <div class="graph-header-top">
+                            <div class="text-gray graph-header-title">Top Products</div>
+                            <h1>598,486</h1>
+                            <p>6.5% change from today</p>
+                        </div>
+                        <div class="graph-header-bottom">
+                            <div class="text-gray graph-header-title">Support Cases</div>
+                            <h1>323,360</h1>
+                            <p>2.5% change from yesterday</p>
+                        </div>
+                    </div>
+                    <div id="area-graph-container" class="graph-footer"></div>
+                </div>
+                <div class="card">
+                    <div class="card-container svg">
+                        <div class="center">
+                            <h4>6,256</h4>
+                            <p class="text-muted">Total Sales</p>
+                        </div>
+                        <div class="center">
+                            <h4>8,569</h4>
+                            <p class="text-muted">Open Campaign</p>
+                        </div>
+                    </div>
+                    <div id="line-chart-container" class="graph-footer"></div>
+                    <div class="card-container svg">
+                        <div class="center">
+                            <h4>5,136</h4>
+                            <p class="text-muted">Online Sales</p>
+                        </div>
+                        <div class="center">
+                            <h4>4,596</h4>
+                            <p class="text-muted">Store Sales</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="row row3">
+            <div class="card-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Assignee</th>
+                            <th>Task Details</th>
+                            <th>Payment Method</th>
+                            <th>Payment Status</th>
+                            <th>Amount</th>
+                            <th>Tracking Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#320</td>
+                            <td>Mark C.Diaz</td>
+                            <td>Support of thteme</td>
+                            <td>Credit card</td>
+                            <td><span class="approved lable">Approved</span></td>
+                            <td>$12,245</td>
+                            <td>JPBBN435893458</td>
+                        </tr>
+                        <tr>
+                            <td>#321</td>
+                            <td>Jose D</td>
+                            <td>Verify your email address !</td>
+                            <td>Internet banking</td>
+                            <td><span class="pending lable">Pending</span></td>
+                            <td>$12,245</td>
+                            <td>BDYBN435893325</td>
+                        </tr>
+                        <tr>
+                            <td>#322</td>
+                            <td>Philips T</td>
+                            <td>Item support message send</td>
+                            <td>Credit card</td>
+                            <td><span class="approved lable">Approved</span></td>
+                            <td>$12,245</td>
+                            <td>JSNTN435884258</td>
+                        </tr>
+                        <tr>
+                            <td>#323</td>
+                            <td>Luke Pixel</td>
+                            <td>New submission on website</td>
+                            <td>Cash on delivery</td>
+                            <td><span class="rejected lable">Rejected</span></td>
+                            <td>$12,245</td>
+                            <td>JPABT435893678</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="row row4">
+            <div class="card-container">
+                <div class="card card-bar-chart">
+                    <div id="bar-chart" class="graph-footer"></div>
+                    <div class="bar-chart-bottom">
+                        <p>Projects Status</p>
+                        <span class="large-count">76,533</span><span>PCS</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4 class="card-title">Updates</h4>
+                    <ul class="bullet-list">
+                        <li>
+                            <h5>User confirmation</h5>
+                            <p>Donec rutrum congue leo eget malesuada.</p>
+                            <span class="mdi mdi-clock text-muted"> 7 Months Ago</span>
+                        </li>
+                        <li>
+                            <h5>Continuous evaluation</h5>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+                            <span class="mdi mdi-clock text-muted"> 7 Months Ago</span>
+                        </li>
+                        <li>
+                            <h5>Promotion</h5>
+                            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+                            <span class="mdi mdi-clock text-muted"> 7 Months Ago</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- include highcharts in html -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/modules/stock.js"></script>
+    <script src="/js/modules/map.js"></script>
+    <script src="index.js" defer></script>
 </body>
 
 </html>

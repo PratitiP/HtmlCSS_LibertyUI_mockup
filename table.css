@@ -1,0 +1,40 @@
+.row3 .card-container{
+    overflow-x: auto;
+    border: 1px solid #d5dcec;
+    justify-content: flex-start;
+}
+
+table{
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+.table th, .table td{
+    font-size: 0.8rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 23px 30px;
+}
+.table td{
+    border-top: 1px solid #d5dcec;
+}
+
+.lable{
+    color: #fff;
+    border-radius: 5px;
+    padding: 1px 8px 2px;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+.approved{
+    background-color: #4CCEAC;
+    border: 1px solid #4CCEAC;
+}
+.pending{
+    background-color: #FF6F59;
+    border: 1px solid #FF6F59;
+}
+.rejected{
+    background-color: #DB504A;
+    border: 1px solid #DB504A;
+}
