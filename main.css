@@ -1,12 +1,12 @@
-.main-wrapper{
-    margin:1.5rem 5%;
+.main-wrapper {
+    margin: 1.5rem 5%;
 }
 
-.row{
+.row {
     margin-bottom: 25px;
 }
 
-.card-container{
+.card-container {
     display: flex;
     flex-wrap: wrap;
     margin-left: 12.5px;
@@ -15,128 +15,146 @@
     align-items: center;
 }
 
-.card{
+.card {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin:0;
+    margin: 0;
     border: 1px solid #d5dcec;
     padding: 35px 25px;
     background-color: #fff;
 }
-.row1 .card{
-    width:25%;
-}
-.row1 .card:nth-child(-n+3){
-    border-right: none;
+
+.row1 .card {
+    width: 50%;
 }
 
-.row2 .card-container, .row4 .card-container{
+
+.row2 .card-container,
+.row4 .card-container {
     justify-content: space-between;
     align-items: stretch;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
-.row2 .card{
-    width: 31%;
+
+.row2 .card,
+.row4 .card {
+    width: 100%;
+    margin-bottom: 25px;
     flex-direction: column;
     justify-content: space-between;
 }
-.graph-card{
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.graph-card {
     padding: 0;
 }
-.graph-header{
-    width:100%;
+
+.graph-header {
+    width: 100%;
     text-align: left;
     padding: 35px 25px;
 }
-.graph-card h1{
+
+.graph-card h1 {
     margin: 0;
 }
-.graph-header-top{
+
+.graph-header-top {
     margin-bottom: 1.5rem;
 }
-.graph-header-bottom{
+
+.graph-header-bottom {
     padding-top: 1.5rem;
-    border-top:1px solid #d5dcec;
+    border-top: 1px solid #d5dcec;
 }
-.row2 p, .row5 p{
+
+.row2 p,
+.row5 p {
     font-size: 0.8rem;
     font-weight: 400;
     margin: 0;
 }
-.graph-footer{
+
+.graph-footer {
     padding: 0;
-    overflow: auto;
+    overflow: auto !important;
     width: 100%;
-    height: 180px;
+}
+#line-chart-container{
+    padding:1rem 0;
 }
 
-.card-container.svg{
+.card-container.svg {
     margin: 0;
     width: 100%;
     justify-content: space-around;
 }
-.bar-chart-top{
+
+.bar-chart-top {
     width: 100%;
     padding: 35px 25px 0px;
 }
-.row4 .card{
-    width: 48%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.row4 .card-updates{
+
+.row4 .card-updates {
     justify-content: flex-start;
     align-items: flex-start;
 }
-#bar-chart{
-    margin:0;
-    height:200px;
+
+#bar-chart {
+    margin: 0;
+    height: 200px;
 }
 
-.bar-chart-bottom{
+.bar-chart-bottom {
     padding: 35px 25px;
-    width:100%;
+    width: 100%;
     border-top: 1px solid #d5dcec;
 
 }
-.text-gray{
+
+.text-gray {
     color: gray;
     font-size: 0.8rem;
     font-weight: 600;
     margin: 0;
     padding: 0;
 }
-.large-count{
+
+.large-count {
     font-size: 3rem;
     font-weight: 600;
 }
 
-.card-text p, .bullet-list p{
+.card-text p,
+.bullet-list p {
     font-size: 0.8rem;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.card-text .card-count{
+.card-text .card-count {
     font-weight: 600;
     font-size: 1.8rem;
 }
 
-.icon-lg{
+.icon-lg {
     font-size: 2.5rem;
     margin-right: 1.5rem;
 }
 
-h4{
+h4 {
     font-size: 1.13rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     margin-top: 0;
 }
 
-.text-muted{
+.text-muted {
     color: #a8abad;
     font-size: 0.8rem;
     font-weight: 400;
@@ -144,11 +162,11 @@ h4{
     margin-bottom: 1rem;
 }
 
-.center{
+.center {
     text-align: center;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #464de4;
     border-color: #464de4;
     font-size: 0.8rem;
@@ -161,27 +179,29 @@ h4{
     border: none
 }
 
-.follow-card-item{
+.follow-card-item {
     padding-left: 12.5px;
     padding-right: 12.5px;
 }
 
-.border-top{
-    margin-top:1rem;
+.border-top {
+    margin-top: 1rem;
     border-top: 1px solid #d5dcec;
 }
 
-.bullet-list{
+.bullet-list {
     list-style-type: none;
     position: relative;
     padding: 0 0 0 25px;
     margin: 0;
 }
-.bullet-list li{
+
+.bullet-list li {
     position: relative;
     padding-bottom: 1rem;
 }
-.bullet-list li::before{
+
+.bullet-list li::before {
     content: '\f025';
     position: absolute;
     font: normal normal normal 1.2rem "Material Design Icons";
@@ -190,7 +210,8 @@ h4{
     top: 0.8rem;
     z-index: 5;
 }
-.bullet-list::before{
+
+.bullet-list::before {
     content: "";
     border: 1px solid #d5dcec;
     position: absolute;
@@ -200,50 +221,100 @@ h4{
     left: 0.1rem;
 }
 
-.bullet-list h5{
+.bullet-list h5 {
     font-size: 0.9rem;
     font-weight: 600;
     margin: 6px 0;
 }
-.card-title{
+
+.card-title {
     width: 100%;
 }
 
-.row5 .card{
-    width:100%;
+.row5 .card {
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.tickets{
+.tickets {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
-.ticket-card{
+
+.ticket-card {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin :1rem 0;
+    margin: 1rem 0;
     padding-bottom: 1rem;
     border-bottom: 1px solid #d5dcec;
 }
-.ticket-card:last-child{
+
+.ticket-card:last-child {
     border: none;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.ticket-content{
-    width: 80%;
+
+.ticket-content {
+    width: 100%;
     align-self: flex-start;
 }
-.ticket-title{
-    display: inline-block;
+
+.ticket-title {
+    display: inline;
     margin: 0;
 }
-.res-value{
+
+.res-value {
     margin-right: 2rem;
 }
 
+.ticket-header p {
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
+.hide-manage-time {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .row1 .card {
+        width: 25%;
+    }
+    .row1 .card:nth-child(-n+3) {
+        border-right: none;
+    }
+    .row2 .card {
+        width: 31%;
+        margin-bottom: 0;
+    }
+    .graph-footer {
+        height: 300px;
+    }
+    #line-chart-container{
+        padding: 0;
+    }
+    .row4 .card {
+        width: 48%;
+        margin-bottom: 0;
+    }
+    .ticket-card {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .ticket-content {
+        width: 80%;
+        align-self: flex-start;
+    }
+    .hide-manage-time {
+        display: contents;
+    }
+}

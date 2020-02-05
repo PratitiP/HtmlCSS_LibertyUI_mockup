@@ -1,0 +1,30 @@
+@media only screen and (min-width: 768px){
+.row1 .card{
+    width:25%;
+}
+.row1 .card:nth-child(-n+3){
+    border-right: none;
+}
+.row2 .card{
+    width: 31%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.graph-footer{
+    padding: 0;
+    overflow: auto;
+    width: 100%;
+    height: 180px;
+}
+
+.row4 .card{
+    width: 48%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ticket-content{
+    width: 80%;
+    align-self: flex-start;
+}
+}

@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link href="rwd.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <link href="table.css" rel="stylesheet">
@@ -284,11 +285,13 @@
                         <article class="ticket-card">
                             <img class=" face circle-image" src="assets/images/face1.jpg" alt="ticket-profile-image">
                             <div class="ticket-content">
-                                <h5 class="txt-bold ticket-title">James : </h5>
-                                <p class="ticket-title">[#23047] Donec rutrum congue leo eget malesuada.</p>
+                                <div class="ticket-header">
+                                    <h5 class="txt-bold ticket-title">James : </h5>
+                                    <p class="ticket-title">[#23047] Donec rutrum congue leo eget malesuada.</p>
+                                </div>
                                 <div class="text-gray">Donec rutrum congue leo eget malesuada. Quisque velit nisi,
                                     pretium ut lacinia in, elementum id enim vivamus.</div>
-                                <div>
+                                <div  class="hide-manage-time">
                                     <span class="text-muted">Last Responded : </span>
                                     <span class="res-value text-muted">3 hours ago</span>
                                     <span class="text-muted">Due in : </span>
@@ -300,11 +303,13 @@
                         <article class="ticket-card">
                             <img class=" face circle-image" src="assets/images/face2.jpg" alt="ticket-profile-image">
                             <div class="ticket-content">
-                                <h5 class="txt-bold ticket-title">Stella : </h5>
-                                <p class="ticket-title">[#23135] Curabitur aliquet quam id dui posuere blandit.</p>
+                                <div class="ticket-header">
+                                    <h5 class="txt-bold ticket-title">Stella : </h5>
+                                    <p class="ticket-title">[#23135] Curabitur aliquet quam id dui posuere blandit.</p>
+                                </div>
                                 <div class="text-gray">Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus
                                     nibh. Curabitur non nulla sit amet nisl.</div>
-                                <div>
+                                <div class="hide-manage-time">
                                     <span class="text-muted">Last Responded : </span>
                                     <span class="res-value text-muted">3 hours ago</span>
                                     <span class="text-muted">Due in : </span>
@@ -316,12 +321,14 @@
                         <article class="ticket-card">
                             <img class=" face circle-image" src="assets/images/face3.jpg" alt="ticket-profile-image">
                             <div class="ticket-content">
-                                <h5 class="txt-bold ticket-title">John Doe : </h5>
-                                <p class="ticket-title">[#23246] Mauris blandit aliquet elit, eget tincidunt nibh
-                                    pulvinar.</p>
+                                <div class="ticket-header">
+
+                                    <h5 class="txt-bold ticket-title">John Doe : </h5>
+                                    <p class="ticket-title">[#23246] Mauris blandit aliquet elit, eget tincidunt nibhpulvinar.</p>
+                                </div>
                                 <div class="text-gray">Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor
                                     risus. Lorem ipsum dolor sit amet.</div>
-                                <div>
+                                <div class="hide-manage-time">
                                     <span class="text-muted">Last Responded : </span>
                                     <span class="res-value text-muted">3 hours ago</span>
                                     <span class="text-muted">Due in : </span>
