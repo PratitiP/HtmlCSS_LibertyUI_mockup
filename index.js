@@ -96,7 +96,7 @@ Highcharts.chart('bar-chart', {
         type: 'column'
     },
     title: {
-        text: 'The Current Chart'
+        text: null
     },
     xAxis: {
         type: 'category'

@@ -18,9 +18,9 @@
 <body>
     <header>
         <div class="nav">
-            <div class="nav-top container">
+            <div class="nav-top">
                 <div class="nav-brand-logo">
-                    <a href="#"><img src="assets/logo.png" alt="logo image"></a>
+                    <a href="#"><img src="assets/images/logo-inverse.svg" alt="logo image"></a>
                 </div>
                 <div class="nav-top-right">
                     <div class="search">
@@ -36,13 +36,13 @@
                     </div>
                 </div>
             </div>
-            <div class="nav-menu-container">
-                <nav class="container nav-menu-main">
+            <div class="nav-main-menu-container">
+                <nav class="nav-menu-botttom">
                     <ul class="nav-menu-list">
-                        <li class="nav-menu-item">
+                        <li class="active nav-menu-item">
                             <a href="#">
-                                <span class="mdi mdi-television color-blue icon-sm"></span>
-                                <span class="nav-menu-item-title">DASHBOARD</span>
+                                <span class="active mdi mdi-television color-blue icon-sm"></span>
+                                <span class="active nav-menu-item-title">DASHBOARD</span>
                             </a>
                         </li>
                         <li class="nav-menu-item">
@@ -128,7 +128,7 @@
                         <img class="circle-image" src="assets/images/profile.jpg" alt="profile-image">
                     </div>
                     <h4 class="center">Maria Jahnson</h4>
-                    <p class="text-muted center">Developer</p>
+                    <div class="text-muted center">Developer</div>
                     <p class="center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
                         eget dolor. Lorem</p>
                     <button class="btn-primary">Follow</button>
@@ -150,12 +150,12 @@
                 <div class="card graph-card">
                     <div class="graph-header">
                         <div class="graph-header-top">
-                            <div class="text-gray graph-header-title">Top Products</div>
+                            <div class="text-gray">Top Products</div>
                             <h1>598,486</h1>
                             <p>6.5% change from today</p>
                         </div>
                         <div class="graph-header-bottom">
-                            <div class="text-gray graph-header-title">Support Cases</div>
+                            <div class="text-gray">Support Cases</div>
                             <h1>323,360</h1>
                             <p>2.5% change from yesterday</p>
                         </div>
@@ -244,14 +244,17 @@
         </section>
         <section class="row row4">
             <div class="card-container">
-                <div class="card card-bar-chart">
+                <div class="card graph-card">
+                    <div class="bar-chart-top">
+                        <h4 class="card-title">The Current Chart</h4>
+                    </div>
                     <div id="bar-chart" class="graph-footer"></div>
                     <div class="bar-chart-bottom">
-                        <p>Projects Status</p>
+                        <p class="text-gray">Projects Status</p>
                         <span class="large-count">76,533</span><span>PCS</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card card-updates">
                     <h4 class="card-title">Updates</h4>
                     <ul class="bullet-list">
                         <li>
@@ -270,6 +273,64 @@
                             <span class="mdi mdi-clock text-muted"> 7 Months Ago</span>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+        <section class="row row5">
+            <div class="card-container">
+                <div class="card">
+                    <h4 class="card-title">Manage Tickets</h4>
+                    <div class="tickets">
+                        <article class="ticket-card">
+                            <img class=" face circle-image" src="assets/images/face1.jpg" alt="ticket-profile-image">
+                            <div class="ticket-content">
+                                <h5 class="txt-bold ticket-title">James : </h5>
+                                <p class="ticket-title">[#23047] Donec rutrum congue leo eget malesuada.</p>
+                                <div class="text-gray">Donec rutrum congue leo eget malesuada. Quisque velit nisi,
+                                    pretium ut lacinia in, elementum id enim vivamus.</div>
+                                <div>
+                                    <span class="text-muted">Last Responded : </span>
+                                    <span class="res-value text-muted">3 hours ago</span>
+                                    <span class="text-muted">Due in : </span>
+                                    <span class="res-value text-muted">2 Days</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Manage</button>
+                        </article>
+                        <article class="ticket-card">
+                            <img class=" face circle-image" src="assets/images/face2.jpg" alt="ticket-profile-image">
+                            <div class="ticket-content">
+                                <h5 class="txt-bold ticket-title">Stella : </h5>
+                                <p class="ticket-title">[#23135] Curabitur aliquet quam id dui posuere blandit.</p>
+                                <div class="text-gray">Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus
+                                    nibh. Curabitur non nulla sit amet nisl.</div>
+                                <div>
+                                    <span class="text-muted">Last Responded : </span>
+                                    <span class="res-value text-muted">3 hours ago</span>
+                                    <span class="text-muted">Due in : </span>
+                                    <span class="res-value text-muted">2 Days</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Manage</button>
+                        </article>
+                        <article class="ticket-card">
+                            <img class=" face circle-image" src="assets/images/face3.jpg" alt="ticket-profile-image">
+                            <div class="ticket-content">
+                                <h5 class="txt-bold ticket-title">John Doe : </h5>
+                                <p class="ticket-title">[#23246] Mauris blandit aliquet elit, eget tincidunt nibh
+                                    pulvinar.</p>
+                                <div class="text-gray">Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor
+                                    risus. Lorem ipsum dolor sit amet.</div>
+                                <div>
+                                    <span class="text-muted">Last Responded : </span>
+                                    <span class="res-value text-muted">3 hours ago</span>
+                                    <span class="text-muted">Due in : </span>
+                                    <span class="res-value text-muted">2 Days</span>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Manage</button>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>

@@ -46,9 +46,11 @@
 }
 .graph-header{
     width:100%;
-    line-height: 0.4rem;
     text-align: left;
     padding: 35px 25px;
+}
+.graph-card h1{
+    margin: 0;
 }
 .graph-header-top{
     margin-bottom: 1.5rem;
@@ -57,9 +59,10 @@
     padding-top: 1.5rem;
     border-top:1px solid #d5dcec;
 }
-.row2 p{
+.row2 p, .row5 p{
     font-size: 0.8rem;
     font-weight: 400;
+    margin: 0;
 }
 .graph-footer{
     padding: 0;
@@ -73,40 +76,40 @@
     width: 100%;
     justify-content: space-around;
 }
-
+.bar-chart-top{
+    width: 100%;
+    padding: 35px 25px 0px;
+}
 .row4 .card{
     width: 48%;
-    justify-content: space-between;
-}
-#bar-chart{
-    margin:auto;
-    height:250px;
-}
-.card-bar-chart{
-    padding:0;
     flex-direction: column;
     justify-content: space-between;
 }
+.row4 .card-updates{
+    justify-content: flex-start
+}
+#bar-chart{
+    margin:0;
+    height:200px;
+}
+
 .bar-chart-bottom{
-    padding: 1rem;
-    height: 30%;
+    padding: 35px 25px;
     width:100%;
-    line-height: 1rem;
     border-top: 1px solid #d5dcec;
 
 }
-.bar-chart-bottom p{
+.text-gray{
     color: gray;
     font-size: 0.8rem;
     font-weight: 600;
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0;
 }
 .large-count{
     font-size: 3rem;
     font-weight: 600;
 }
-
 
 .card-text p, .bullet-list p{
     font-size: 0.8rem;
@@ -151,7 +154,9 @@ h4{
     padding: 0.5rem 0.8rem;
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: none;
+    margin-top: 1rem;
+    font-family: "Open Sans", sans-serif;
+    border: none
 }
 
 .follow-card-item{
@@ -164,20 +169,79 @@ h4{
     border-top: 1px solid #d5dcec;
 }
 
-.row4 .card{
-    flex-direction: column;
-    justify-content: space-between;
-}
 .bullet-list{
-    width: 100%;
     list-style-type: none;
+    position: relative;
+    padding: 0 0 0 25px;
+    margin: 0;
 }
+.bullet-list li{
+    position: relative;
+    padding-bottom: 1rem;
+}
+.bullet-list li::before{
+    content: '\f025';
+    position: absolute;
+    font: normal normal normal 1.2rem "Material Design Icons";
+    color: #464de3;
+    left: -2rem;
+    top: 0.8rem;
+    z-index: 5;
+}
+.bullet-list::before{
+    content: "";
+    border: 1px solid #d5dcec;
+    position: absolute;
+    z-index: 2;
+    top: 2rem;
+    bottom: 0;
+    left: 0.1rem;
+}
+
 .bullet-list h5{
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin: 6px 0;
 }
 .card-title{
     width: 100%;
-
 }
+
+.row5 .card{
+    width:100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tickets{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.ticket-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin :1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d5dcec;
+}
+.ticket-card:last-child{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.ticket-content{
+    width: 80%;
+    align-self: flex-start;
+}
+.ticket-title{
+    display: inline-block;
+    margin: 0;
+}
+.res-value{
+    margin-right: 2rem;
+}
+
+
