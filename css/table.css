@@ -1,3 +1,4 @@
+/* Table - horizontally scrillable */
 .row3 .card-container{
     overflow-x: auto;
     border: 1px solid #d5dcec;
@@ -21,6 +22,7 @@ table{
     background-color: #fff;
 }
 
+/* labels for payment status */
 .lable{
     color: #fff;
     border-radius: 5px;

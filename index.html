@@ -3,23 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <title>
-        LibertyUI
-    </title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.8.95/css/materialdesignicons.min.css"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
     <link href="css/common.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/table.css" rel="stylesheet">
-
+    <title>LibertyUI</title>
 </head>
 
 <body>
+    <!-- header to include navigation bars -->
     <header>
         <div class="nav">
+            <!-- top navigation for logo, search, notifications, account details dropdown -->
             <div class="nav-top">
                 <div class="nav-brand-logo">
                     <a href="#"><img src="assets/logo-inverse.svg" alt="logo image"></a>
@@ -38,6 +37,7 @@
                     </div>
                 </div>
             </div>
+            <!-- main navigation menu in header -->
             <div class="nav-main-menu-container">
                 <nav class="nav-menu-botttom">
                         <div class="toggle"><span class="mdi mdi-menu"></span></div>
@@ -83,7 +83,9 @@
             </div>
         </div>
     </header>
+    <!-- main content of webpage between header and footer -->
     <main class="main-wrapper">
+        <!-- module 1 - first row in which cards show the important counts -->
         <section class="row row1">
             <div class="card-container">
                 <div class="card">
@@ -124,6 +126,7 @@
                 </div>
             </div>
         </section>
+        <!-- module 2 - profile , area graph, line svg -->
         <section class="row row2">
             <div class="card-container">
                 <div class="card card-profile">
@@ -190,6 +193,7 @@
                 </div>
             </div>
         </section>
+        <!-- module 3 - horizantally scrollable table for payment details -->
         <section class="row row3">
             <div class="card-container">
                 <table class="table">
@@ -245,6 +249,7 @@
                 </table>
             </div>
         </section>
+        <!-- module 4 - bar chart, project status, Updates using bullet list-->
         <section class="row row4">
             <div class="card-container">
                 <div class="card graph-card">
@@ -279,6 +284,7 @@
                 </div>
             </div>
         </section>
+        <!-- module 5 - Manage tickets cards -->
         <section class="row row5">
             <div class="card-container">
                 <div class="card">
