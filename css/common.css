@@ -1,3 +1,4 @@
+/* Variables for global use */
 :root {
     --main-bg-color: #eff3f5;
     --icon-color:#464de3;
@@ -8,11 +9,12 @@
     --button-border-color:#464de4;
     --button-text:#fff;
   }
-
+/* root element styling */
 * {
     box-sizing: border-box;
     outline: none;
 }
+
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
@@ -22,6 +24,7 @@ body {
     background-color: var(--main-bg-color);
 
 }
+
 p{
     font-size: 0.8rem;
     margin-top: 0;
@@ -30,6 +33,7 @@ p{
     overflow: hidden;
     white-space: wrap;
 }
+
 h4 {
     font-size: 1.13rem;
     font-weight: 600;

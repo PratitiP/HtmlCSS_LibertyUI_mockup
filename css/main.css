@@ -79,6 +79,7 @@
 .row5 p {
     font-weight: 400;
     max-height: 4rem;
+    margin-bottom: 0.5rem;
 }
 
 .graph-footer {

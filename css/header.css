@@ -161,6 +161,7 @@ header{
     display: contents;
 }
 
+/* media query to handle desktop view having width > 768px  */
 @media only screen and (min-width: 768px){
     .toggle{
         display: none;
@@ -176,5 +177,8 @@ header{
     }
     .search{
         display: block;
+    }
+    .nav-top-right{
+        margin-right: 0;
     }
 }
