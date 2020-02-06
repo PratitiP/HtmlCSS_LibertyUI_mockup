@@ -1,0 +1,89 @@
+:root {
+    --main-bg-color: #eff3f5;
+    --icon-color:#464de3;
+    --card-bg-color:#fff;
+    --border-color:#d5dcec;
+    --font-color:#223C61;
+    --button-bg-color:#464de4;
+    --button-border-color:#464de4;
+    --button-text:#fff;
+  }
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #223C61;
+    margin: 0;
+    background-color: var(--main-bg-color);
+
+}
+p{
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+}
+h4 {
+    font-size: 1.13rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.text-gray {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.large-count {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.text-muted {
+    color: #a8abad;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.icon-lg {
+    font-size: 2.5rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.circle-image {
+    border-radius: 50%;
+}
+
+.btn-primary {
+    background-color: var(--button-bg-color);
+    border-color: var(--button-border-color);
+    font-size: 0.8rem;
+    color: var(--button-text);
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    font-family: "Open Sans", sans-serif;
+    border: none
+}
+
+.border-top {
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}

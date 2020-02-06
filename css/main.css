@@ -1,10 +1,13 @@
+/* all the part in between header and footer */
 .main-wrapper {
     margin: 1.5rem 5%;
 }
 
+/* define horizantal contents */
 .row {
     margin-bottom: 25px;
 }
+/* define container for all the cards in row */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +16,7 @@
     justify-content: center;
     align-items: center;
 }
+/* Seperate cards in a card-container in a row */
 .card {
     display: flex;
     flex-wrap: nowrap;
@@ -20,9 +24,9 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    border: 1px solid #d5dcec;
+    border: 1px solid var(--border-color);
     padding: 35px 25px;
-    background-color: #fff;
+    background-color: var(--card-bg-color);
 }
 
 .row1 .card {
@@ -47,6 +51,7 @@
     margin-bottom: 0;
 }
 
+/* graphs and charts */
 .graph-card {
     padding: 0;
 }
@@ -67,12 +72,13 @@
 
 .graph-header-bottom {
     padding-top: 1.5rem;
-    border-top: 1px solid #d5dcec;
+    border-top: 1px solid var(--border-color);
 }
 
 .row2 p,
 .row5 p {
     font-weight: 400;
+    max-height: 4rem;
 }
 
 .graph-footer {
@@ -108,21 +114,8 @@
 .bar-chart-bottom {
     padding: 35px 25px;
     width: 100%;
-    border-top: 1px solid #d5dcec;
+    border-top: 1px solid var(--border-color);
 
-}
-
-.text-gray {
-    color: gray;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-}
-
-.large-count {
-    font-size: 3rem;
-    font-weight: 600;
 }
 
 .card-text p{
@@ -134,53 +127,13 @@
     font-size: 1.8rem;
 }
 
-.icon-lg {
-    font-size: 2.5rem;
-    /* margin-right: 1.5rem; */
-}
-
-h4 {
-    font-size: 1.13rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-}
-
-.text-muted {
-    color: #a8abad;
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.center {
-    text-align: center;
-}
-
-.btn-primary {
-    background-color: #464de4;
-    border-color: #464de4;
-    font-size: 0.8rem;
-    color: #fff;
-    padding: 0.5rem 0.8rem;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 1rem;
-    font-family: "Open Sans", sans-serif;
-    border: none
-}
-
 .follow-card-item {
     padding-left: 12.5px;
     padding-right: 12.5px;
 }
 
-.border-top {
-    margin-top: 1rem;
-    border-top: 1px solid #d5dcec;
-}
 
+/* Card for update tracking using bullet list */
 .bullet-list {
     list-style-type: none;
     position: relative;
@@ -197,7 +150,7 @@ h4 {
     content: '\f025';
     position: absolute;
     font: normal normal normal 1.2rem "Material Design Icons";
-    color: #464de3;
+    color: var(--icon-color);
     left: -2rem;
     top: 0.8rem;
     z-index: 5;
@@ -205,7 +158,7 @@ h4 {
 
 .bullet-list::before {
     content: "";
-    border: 1px solid #d5dcec;
+    border: 1px solid var(--border-color);
     position: absolute;
     z-index: 2;
     top: 2rem;
@@ -223,6 +176,7 @@ h4 {
     width: 100%;
 }
 
+/* Last row for managing tickets */
 .row5 .card {
     width: 100%;
     justify-content: space-between;
@@ -242,7 +196,7 @@ h4 {
     align-items: flex-start;
     margin: 1rem 0;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #d5dcec;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .ticket-card:last-child {
@@ -254,6 +208,9 @@ h4 {
 .ticket-content {
     width: 100%;
     align-self: flex-start;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .ticket-title {
@@ -265,17 +222,11 @@ h4 {
     margin-right: 2rem;
 }
 
-.ticket-header p {
-    white-space: pre-wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .hide-manage-time {
     display: none;
 }
 
-
+/* media query to handle desktop view having width > 768px  */
 @media only screen and (min-width: 768px) {
     .row1 .card {
         width: 25%;
@@ -298,7 +249,7 @@ h4 {
         flex-wrap: nowrap;
     }
     .graph-footer {
-        height: 300px;
+        height: 250px;
     }
     #line-chart-container{
         padding: 0;
