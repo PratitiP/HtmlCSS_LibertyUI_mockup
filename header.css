@@ -2,7 +2,6 @@
     box-sizing: border-box;
     outline: none;
 }
-
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
@@ -11,6 +10,11 @@ body {
     margin: 0;
     background-color: #eff3f5;
 
+}
+p{
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 header{
@@ -27,6 +31,7 @@ header{
     justify-content: space-between;
     padding-left: 12.5px;
     padding-right: 12.5px;
+    position: relative;
 }
 .nav-top {
     width: 100%;
@@ -34,26 +39,25 @@ header{
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    margin-right: auto;
-    
+    margin-right: auto;    
 }
 .nav-brand-logo {
     width: 40%;
-    height: 28px;
-    max-width: 100%;
 }
 .nav-brand-logo img{
     width: 40%;
+    min-width: 8rem;
 }
 .nav-top-right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 12.5px;
+    margin-right:1.5rem;
 }
 
 .search {
-    display: flex;
+    display: none;
     align-items: center;
     border-radius: 50px;
     background: #eff3f5;
@@ -75,15 +79,13 @@ header{
     outline: none;   
 }
 
-
 .notification {
     margin: 12px;
     position: relative;
     padding: 7px 7px;
 }
 .notification .mdi-bell-outline {
-    font-size: inherit;
-
+    font-size: 1.2rem;
 }
 .notification .badge {
     position: absolute;
@@ -93,7 +95,7 @@ header{
     font-size: 11px;
     font-weight: 600;
     /* Position the badge within the relatively positioned button */
-    top: 0;
+    top: 5px;
     right: 0;
     width: 1rem;
     height: 1rem;
@@ -103,7 +105,6 @@ header{
 .account-details-dropdown{
     position: relative;
 }
-
 .account-details-dropdown::after{
     content: '\F140';
     position: absolute;
@@ -121,23 +122,22 @@ header{
 
 .nav-main-menu-container {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 .nav-menu-list {
+    display: none;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
 
 .nav-menu-item{
-    display: inline-block;
-    width: 16%;
-    text-align: center;
+    text-align: left;
     padding: 0.8rem 0;
 }
 .nav-menu-item a{
     text-decoration: none;
-    white-space: normal;
+    white-space: nowrap;
 }
 .icon-sm {
     font-size: 0.8rem;
@@ -168,3 +168,34 @@ header{
     color: #fff !important;
 }
 
+.mdi-menu{
+    font-size: 1.5rem;
+    padding:0.3rem;
+    padding-left:1.5rem;
+}
+.toggle{
+    position: absolute;
+    right: 0;
+    top: 0.6rem;
+}
+.toggle:hover ~ .nav-menu-list{
+    display: contents;
+}
+
+@media only screen and (min-width: 768px){
+    .toggle{
+        display: none;
+    }
+    .nav-menu-list {
+        display: contents;
+        width: 100%;
+    }
+    .nav-menu-item{
+        display: inline-block;
+        width: 16%;
+        text-align: center;
+    }
+    .search{
+        display: block;
+    }
+}
